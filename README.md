@@ -117,6 +117,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact Information
 
-    Email: atiqishrak7@gmail.com
-    LinkedIn: https://www.linkedin.com/in/atiq-ishrak-744a69229/
+- Email: [atiqishrak7@gmail.com](mailto:atiqishrak7@gmail.com)
+- LinkedIn: [Atiq Ishrak](https://www.linkedin.com/in/atiq-ishrak-744a69229/)
 
