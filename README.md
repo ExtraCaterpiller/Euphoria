@@ -6,7 +6,6 @@ A full-stack e-commerce application built with the MERN stack. This app allows u
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
