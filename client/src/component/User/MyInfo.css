@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.myinfo{
+    color: #3C4242;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin-bottom: 2rem;
+}
+
+.address-title {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.myinfo > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.info-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.info-avatar>img{
+    border-radius: 50%;
+}
+
+.info-avatar>img:hover{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.info-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.info-mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.info-num {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.info-pass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+}
+
+.info-btn-change{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    border: none;
+    color: #3C4242;
+    margin-right: 1rem;
+}
+
+.info-btn-change:hover {
+    cursor: pointer;
+}
+
+.info-user {
+    color:#807D7E;
+}
+
+.info-btn-num{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    border: none;
+    background-color: #8A33FD;
+    border-radius: 5px;
+    height: 2rem;
+    width: 10rem;
+    color: aliceblue;
+}
+
+.info-btn-num:hover {
+    cursor: pointer;
+    background-color: #6320bb;
+}
+
+.info-address > h1 {
+    font-size: 1.8rem;
+}
+
+.info-address-map {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.address-btn{
+    border: none;
+    background-color: #8A33FD;
+    border-radius: 5px;
+    height: 2rem;
+    width: 9rem;
+    color: aliceblue;
+}
+
+.address-btn:hover {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    cursor: pointer;
+    background-color: #6320bb;
+}
+
+.address-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.address-card-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.address-card-name {
+    color: #3C4242;
+    font-weight: 700;
+    font-size: large;
+}
+
+.address-card-btn > button {
+    border: none;
+    color: #161818;
+}
+
+.address-card-btn > button:hover {
+    cursor: pointer;
+}
+
+.info-edit-title, .info-avatar-title{
+    text-align: center;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pass-change{
+    line-height: 0.7;
+}
+
+.pass-change>h4 {
+    color: #3C4242;
+}
+
+.pass-change>input{
+    border-radius: 5px;
+    border: 1px solid #6320bb;
+}
+
+@media (max-width: 840px) {
+    .address-btn-mobile{
+        display: flex;
+        justify-content: center;
+    }
+}

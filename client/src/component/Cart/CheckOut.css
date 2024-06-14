@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.checkout {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    color: #3C4242;
+}
+
+.checkout-upper {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    gap: 5%;
+}
+
+.addr {
+    padding: 0.5rem 1rem;
+}
+
+.selected{
+    outline: 1px solid #8434E1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.notselected:hover {
+    outline: 1px solid #160727;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.checkout-add-address-btn{
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    background-color: #8434E1;
+    color: aliceblue;
+    margin-top: 1rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.checkout-add-address-btn:hover {
+    cursor: pointer;
+    background-color: #732dc4;
+}
+
+.checkout-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-cart>div> img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+.checkout-cart>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkout-prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.checkout-lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.checkout-lower>button {
+    border: none;
+    background-color: #8434E1;
+    color: aliceblue;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.checkout-lower>button:hover {
+    cursor: pointer;
+    background-color: #732dc4;
+}
+
+@media (max-width: 840px) {
+    .checkout-upper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

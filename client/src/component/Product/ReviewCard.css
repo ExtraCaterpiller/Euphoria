@@ -1,0 +1,40 @@
+.reviewCard{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #8434E1;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    height: 30vh;
+}
+
+.review-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.review-user > p {
+    margin-left: 0.5rem;
+}
+
+.reviewCardComment {
+    margin-top: 0.5rem;
+    overflow: auto;
+}
+
+@media (max-width: 840px) {
+    .reviewCard {
+        height: 18vh;
+        overflow-x: hidden;
+    }
+
+    .review-user > p {
+        margin-left: 0.1rem;
+    }
+
+    .reviewCardComment {
+        overflow: auto;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.dashboard-container{
+    box-sizing: border-box;
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+.dashboard-container>p{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: larger;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.dashboard-summary-box1{
+    display: grid;
+}
+
+.dashboard-summary-box1>div>p{
+    text-align: center;
+}
+
+.dashboard-summary-box2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box2{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.dashboard-charts{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+    margin: 2rem 0;
+}
+
+.dashboard-lineChart{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.dashboard-doughnutChart{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+
+.board-mobile{
+    display: none;
+}
+
+
+@media (max-width: 840px) {
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .board-desktop{
+        display: none;
+    }
+
+    .dashboard-menu{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .board-mobile{
+        display: block;
+        z-index: 2;
+        position: absolute;
+        color: black;
+        top: 0;
+        left: -15%;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%)
+    }
+
+    .board-active{
+        background-color: #8A33FD;
+        height: 100%;
+        width: 100%;
+        transform: translateX(14.9%);
+        position: fixed;
+        overflow-y: auto;
+        margin-top: 4rem;
+    }
+
+    .dashboard-container{
+        margin-top: 1rem;
+    }
+
+    .dashboard-charts{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

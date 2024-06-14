@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.login-page{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5%;
+}
+
+.login-form {
+    margin-top: 8rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.login-form>h1{
+    color: #333333;
+    margin-bottom: 3rem;
+}
+
+.btn-login{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin-right: 5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    width: 8rem;
+    height: 2rem;
+}
+
+.btn-register {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    border: 1px solid #8A33FD;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #8A33FD;
+    width: 8rem;
+    height: 2rem;
+    margin-bottom: 5rem;
+}
+
+.btn-register:hover{
+    cursor: pointer;
+}
+
+.login-email {
+    line-height: 0.5;
+    margin: 2rem 0;
+}
+
+.login-email>input {
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+}
+
+.login-email>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.login-pass {
+    line-height: 0.5;
+}
+
+.login-pass>input{
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.login-pass>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.login-button{
+    margin-top: 2rem;
+}
+
+.login-button>button{
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    width: 8rem;
+    height: 2rem;
+}
+
+.login-button>button:hover{
+    cursor: pointer;
+    background-color: #712dca;
+}
+
+.login-des>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.login-des>p>span{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 840px) {
+    .login-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form{
+        margin-top: 4rem;
+    }
+
+    .login-image{
+        display: none;
+    }
+
+    .btn-login{
+        margin-left: 2rem;
+    }
+
+    .login-form>h1{
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .login-email, .login-pass{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-email>p, .login-pass>p{
+        margin-left: 0.5rem;
+    }
+
+    .login-email>input, .login-pass>input{
+        width: 95%;
+        align-self: center;
+    }
+
+    .login-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-des{
+        margin-bottom: 2rem;
+    }
+
+    .login-des>p{
+        text-align: center;
+    }
+}

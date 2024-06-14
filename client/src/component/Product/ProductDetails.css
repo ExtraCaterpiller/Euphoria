@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.ProductDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.carousel-price {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 5%;
+}
+
+
+.close-button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+
+.product-name {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #3C4242;
+}
+
+.product-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+  color: #807D7E;
+}
+
+.product-size {
+  color: #807D7E;
+  line-height: 0.4;
+  margin-top: 3%;
+}
+
+.product-size > button{
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  color: #3C4242;
+}
+
+.product-size > button:hover {
+  cursor: pointer;
+  transform: translateY(-15%);
+}
+
+.product-color {
+  color: #3C4242;
+  line-height: 0.6;
+}
+
+.product-color>button{
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1%;
+  transition: all 0.3s;
+}
+
+.product-color>button:hover {
+  cursor: pointer;
+  transform: translateY(-15%);
+}
+
+.product-price {
+  color: #3C4242;
+  margin: 1.5rem 0;
+}
+
+
+.button-qnt{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.button-qnt > button {
+  width: 2.5%;
+  height: auto;
+  border: none;
+  background-color: #8434E1;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.button-qnt > button:hover {
+  cursor: pointer;
+}
+
+.button-qnt > input {
+  border: none;
+  width: 4rem;
+  text-align: center;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  outline: 2px solid #3C4242;
+}
+
+.product-cart-price{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-cart-price>button {
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cousine", monospace;
+  font-weight: 400;
+  font-style: normal;
+  border: none;
+  background-color: #8A33FD;
+  width: 9rem;
+  color: #FFFFFF;
+}
+
+.cart-button:hover {
+  cursor: pointer;
+}
+
+.price-button{
+  font-family: "Cousine", monospace;
+  font-weight: 400;
+  font-style: normal;
+  width: 5rem;
+  margin-left: 1rem;
+  border-color: #3C4242;
+  color: #3C4242;
+}
+
+.redColor {
+  color: #F35528;
+}
+
+.greenColor{
+  color: #48BC4E;
+}
+
+.vertical-line{
+  border-left: 4px solid #8A33FD;
+  height: 18px; 
+  margin-right: 0.5rem;
+}
+
+.desc-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #3C4242;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+.desc-2{
+  margin-left: 1rem;
+  color: #3C4242;
+}
+
+.similar-product-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.similar-product{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+}
+
+.product-review {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+.product-review-diag > button{
+  background-color: #8434E1;
+  font-family: "Cousine", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  height: 2rem;
+  width: 8rem;
+}
+
+.product-review-diag > button:hover {
+  cursor: pointer;
+  background-color: #601fb6;
+}
+
+.submit-dialog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-dialog-textarea{
+  margin-top: 1rem;
+}
+
+.review-submit-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+
+@media (max-width: 840px) {
+
+  .carousel-container{
+    margin-top: -1rem;
+  }
+
+  .product-name{
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .cart-button{
+    font-size: 11px;
+  }
+
+  .product-des-mobile{
+    margin-left: -1rem;
+  }
+
+  .product-similr-product-mobile{
+    margin-left: -1rem;
+  }
+
+  .similar-product{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    flex-wrap: nowrap;
+  }
+}

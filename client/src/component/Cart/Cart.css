@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.cart-header {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    display: grid;
+    grid-template-columns: 30% 14% 14% 14% 14% 14%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.cart-header > p {
+    margin-right: 10rem;
+}
+
+.pos-header {
+    text-align: right;
+}
+
+.cart-total {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+}
+
+.cart-line-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-line {
+    border: 1px solid #3C4242;
+    width: 20rem;
+}
+
+.proceed-button-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.proceed-button-container> button{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #8434E1;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 11rem;
+    color: aliceblue;
+}
+
+.proceed-button-container>button:hover {
+    cursor: pointer;
+    background-color: #6b25bc;
+}
+
+.empty-cart {
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.empty-cart>img {
+    height: 20rem;
+    width: 25rem;
+}
+
+.empty-cart-des{
+    text-align: center;
+    line-height: 0.6;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.empty-cart-des>p{
+    color: #807D7E;
+}
+
+.empty-cart>button {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #8434E1;
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 9rem;
+    color: aliceblue;
+}
+
+.empty-cart>button:hover {
+    cursor: pointer;
+    background-color: #6b25bc;
+}
+
+@media (max-width: 840px) {
+    .cart-header{
+        font-size: x-small;
+        text-align: center;
+    }
+
+    .cart-mobile{
+        min-height: 60vh;
+    }
+}

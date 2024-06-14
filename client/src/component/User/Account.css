@@ -1,0 +1,91 @@
+
+
+.account{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 20% 78%;
+    gap: 2%;
+}
+
+.line-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 1rem;
+}
+
+.vertical-line{
+    border: none;
+    color: #3C4242;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    border-left: 5px solid #8A33FD;
+    text-align: left;
+    padding-left: 1rem;
+    height: 1.5rem;
+    font-size: large;
+}
+
+.line-container > p{
+    color: #3C4242;
+}
+
+.account-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.account-left > button:hover {
+    cursor: pointer;
+}
+
+.account-left > button {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin-top: 0.4rem;
+    margin-left: .1rem;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.isActive1 {
+    border: none;
+    border-left: 2px solid black;
+}
+
+.notActive{
+    border: none;
+}
+
+.signout{
+    border: none;
+}
+
+
+@media (max-width: 840px) {
+    .account{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .isActive1{
+        border: none;
+        text-decoration: underline;
+        color: #3C4242;
+    }
+
+    .account-right{
+        margin: 0 0.7rem;
+    }
+
+    .signout{
+        margin-right: 1.5rem;
+    }
+}

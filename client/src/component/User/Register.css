@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.register-page{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5%;
+}
+
+.register-form {
+    margin-top: 8rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.register-form>h1{
+    color: #333333;
+    margin-bottom: 3rem;
+}
+
+.btn-register-2{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    width: 8rem;
+    height: 2rem;
+}
+
+.btn-register-1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    margin-right: 5rem;
+    border: 1px solid #8A33FD;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #8A33FD;
+    width: 8rem;
+    height: 2rem;
+    margin-bottom: 5rem;
+}
+
+.btn-register-1:hover{
+    cursor: pointer;
+}
+
+.register-name {
+    line-height: 0.5;
+    margin: 2rem 0;
+}
+
+.register-name>input{
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+}
+
+.register-name>p {
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-email {
+    line-height: 0.5;
+    margin: 2rem 0;
+}
+
+.register-email>input {
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+}
+
+.register-email>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-pass {
+    line-height: 0.5;
+}
+
+.register-pass>input{
+    border-radius: 5px;
+    width: 25rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.register-pass>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-avatar{
+    line-height: 0.5;
+    margin: 2rem 0;
+}
+
+.register-avatar>input::file-selector-button{
+    border-radius: 5px;
+    width: 10rem;
+    height: 2rem;
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-avatar>p {
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-button{
+    margin-top: 4rem;
+}
+
+.register-button>button{
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    width: 8rem;
+    height: 2rem;
+}
+
+.register-button>button:hover{
+    cursor: pointer;
+    background-color: #712dca;
+}
+
+.register-des>p{
+    font-size: small;
+    color: #3C4242;
+}
+
+.register-des>p>span{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 840px) {
+    .register-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-form{
+        margin-top: 4rem;
+    }
+
+    .register-image{
+        display: none;
+    }
+
+    .btn-register-1{
+        margin-left: 2.1rem;
+    }
+
+    .register-form>h1{
+        text-align: center;
+        margin-top: -1rem;
+    }
+
+    .register-name, .register-email, .register-pass{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-name>p, .register-email>p, .register-pass>p, .register-avatar>p{
+        margin-left: 0.5rem;
+    }
+
+    .register-name>input, .register-email>input, .register-pass>input{
+        width: 95%;
+        align-self: center;
+    }
+
+    .register-avatar>input {
+        margin-left: .5rem;
+    }
+
+    .register-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .register-des{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}

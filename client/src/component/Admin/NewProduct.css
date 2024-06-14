@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.newProductContainer{
+    box-sizing: border-box;
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.newProduct-title{
+    text-align: center;
+    font-weight: 600;
+    color: #3C4242;
+}
+
+.createProductForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 40vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.newProduct-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.newProduct-div>input,
+.newProduct-div>select,
+.newProduct-div>textarea {
+    padding: 1vmax 1vmax 1vmax 3.5vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+
+.newProduct-div>svg {
+    transform: translateX(1vmax);
+    position: absolute;
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+.newProduct-select{
+    margin-top: 1rem;
+}
+
+.newProduct-select-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.newProduct-select-size>label{
+    margin-right: 0.5rem;
+    color: #3C4242;
+}
+
+.newProduct-select-size>input{
+    color: #3C4242;
+}
+
+
+#productFormImage{
+    display: flex;
+    padding: 0;
+}
+
+#productFormImage>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    color: rgba(13, 12, 12, 0.623);
+    background-color: rgb(255, 255, 255);
+}
+
+
+#productFormImage > input::file-selector-button:hover {
+    background-color: rgb(217, 211, 211);
+}
+
+.image-container{
+    display: flex;
+    width: 100%;
+    overflow-x: auto; 
+    padding: 0.5vmax 0;
+}
+
+.image-container>img{
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.newProduct-btn{
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.newProduct-btn:hover {
+    cursor: pointer;
+    background-color: #782bdd;
+}
+
+@media (max-width: 840px) {
+    .newProductContainer{
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-top: 1.5rem;
+    }
+
+    .createProductForm{
+        width: 70%;
+    }
+}

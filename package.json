@@ -1,0 +1,33 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon server.js",
+    "build": "npm install --prefix ./client && npm run build --prefix ./client && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.1",
+    "nodemailer": "^6.9.13",
+    "stripe": "^15.5.0",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

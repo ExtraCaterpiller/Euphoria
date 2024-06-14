@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.update-user-form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 70vh;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+    margin-top: 1rem;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    color: #3C4242;
+}
+
+.update-user-form-title{
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+.update-user-form>img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.update-user-form>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.update-user-form>div>svg{
+    margin-right: 0.5rem;
+}
+
+.update-user-submit{
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    width: 5rem;
+    height: 2rem;
+    font-family: "Open Sans", sans-serif;
+    color: aliceblue;
+}
+
+.update-user-submit:hover {
+    cursor: pointer;
+    background-color: #782bdd;
+}
+
+@media (max-width: 840px) {
+    .update-user-form{
+        width: 70%;
+        margin-top: 2rem;
+    }
+}

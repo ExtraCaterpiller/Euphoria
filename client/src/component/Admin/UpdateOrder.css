@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.order-status-container{
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 50% 48%;
+    gap: 2%;
+    color: #3C4242;
+    font-family: "Open Sans", sans-serif;
+}
+
+.order-status-container>div>p{
+    font-size: larger;
+    font-weight: 550;
+    margin-top: 1rem;
+}
+
+.order-status-container>div>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.order-status-container>div>div>div{
+    margin-right: 0.5rem;
+}
+
+.order-items-all{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-status-item-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.order-status-item-list>img{
+    width: 7vw;
+    height: 10vh;
+    object-fit: cover;
+    margin: 1rem 0;
+}
+
+.order-status-item-list>div{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.updateOrderForm {
+    padding: 3vmax;
+    display: flex;
+    flex-direction: column;
+}
+
+.updateOrderForm>h1{
+    font-size: x-large;
+    font-weight: 600;
+}
+  
+.updateOrderForm > div {
+    display: flex;
+    align-items: center;
+}
+
+.updateOrderForm > div > select {
+    padding: 1vmax 4vmax;
+    margin: 2rem 0;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    font: 300 0.9vmax cursive;
+    outline: none;
+}
+  
+.updateOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+.update-order-form-btn{
+    width: 5rem;
+    height: 2.5rem;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #8A33FD;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+}
+
+.update-order-form-btn:hover{
+    cursor: pointer;
+    background-color: #6d27ca;
+}
+  
+@media screen and (max-width: 600px) {
+    .order-status-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+
+    .order-status-item-list>img{
+        width: 5rem;
+        height: auto;
+    }
+
+    .updateOrderForm {
+      padding: 5vmax;
+      margin-left: 1.5rem;
+    }
+
+    .updateOrderForm>h1{
+        text-align: center;
+    }
+  
+    .updateOrderForm > div > select {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+  
+    .updateOrderForm > div > svg {
+      font-size: 2.8vmax;
+    }
+}

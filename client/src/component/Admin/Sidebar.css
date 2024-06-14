@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+  
+.sidebar > a > img {
+    width: 100%;
+    transition: all 0.5s;
+}
+  
+.sidebar > a > img:hover {
+    filter: drop-shadow(0 0 10px #8A33FD);
+}
+.sidebar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.493);
+    padding-left: 2rem;
+    transition: all 0.5s;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.sidebar>div {
+    padding-left: 2rem;
+    color: rgba(0, 0, 0, 0.493);
+}
+
+
+.sidebar a:hover {
+    color: #8A33FD;
+    transform: scale(1.1);
+}
+  
+.sidebar a > P {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a > p > svg {
+    margin-right: 0.5rem;
+}
+
+.sidebar-tree a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.493);
+    padding-left: 2rem;
+    transition: all 0.5s;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.sidebar-tree a:hover {
+    color: #8A33FD;
+    transform: scale(1.1);
+}
+
+.sidebar-tree a {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-tree a>svg {
+  margin-right: -1.5rem;
+}

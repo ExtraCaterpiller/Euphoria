@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.cover-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.img-tops{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    top: 45%;
+    left: 15%;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.img-tops>h1{
+    font-weight: 800;
+    font-size: 800;
+    line-height: 0.5;
+}
+
+.img-tops>span{
+    padding-top: 1rem;
+    margin-top: 10%;
+}
+
+.button1{
+    display: block;
+    margin-top: 20%;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-decoration-color: #3C4242;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+.button2{
+    display: block;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-decoration-color: #FFFFFF;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.button2:hover{
+    cursor: pointer;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: top;
+}
+
+.img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+}
+
+.arrow1{
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 1;
+    font-size: 2rem;
+}
+.arrow2{
+    position: absolute;
+    top: 50%;
+    right: 1.5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #FFFFFF;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.featured{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.products-container{
+    display: flex;
+    flex-direction: row;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.home-shop-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.home-shop-btn>button{
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #8434E1;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.home-shop-btn>button:hover{
+    cursor: pointer;
+    background-color: #732dc3;
+}
+
+@media (max-width: 840px) {
+    .cover-container{
+        width: 100vw;
+        height: 12rem;
+    }
+
+    .img-tops{
+        font-size: 10px;
+        transform: translate(-25%, -50%);
+    }
+
+    .button1, .button2 {
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .home-shop-btn>button{
+        font-size: 10px;
+        width: auto;
+        height: 1.5rem;
+    }
+}

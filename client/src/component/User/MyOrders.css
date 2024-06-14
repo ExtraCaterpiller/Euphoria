@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.myorder-title{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: #3C4242;
+}
+
+
+.order-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tab {
+    font-weight: 500;
+    font-size: large;
+    color: #3C4242;
+}
+
+.tab:hover{
+    cursor: pointer;
+}
+
+.activeTab {
+    text-decoration: underline;
+}
+
+.order-no{
+    font-weight: 550;
+}
+
+.order-container {
+    margin: 1rem 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: #3C4242;
+}
+
+.order-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 1rem;
+}
+
+.order-items{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-items>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.order-items>div>img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: contain;
+}
+
+.order-items>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-items>button {
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #8A33FD;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.order-items>button:hover {
+    cursor: pointer;
+    background-color: #712acd;
+}
+
+.order-empty{
+    text-align: center;
+    margin: 2rem 0;
+    color: #3C4242;
+    font-size: larger;
+    font-weight: 500;
+}
+
+@media (max-width: 840px) {
+    .order-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-items-all{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-items{
+        font-size: small;
+    }
+
+    .order-items>div>img{
+        width: 5rem;
+        margin-right: 0.5rem;
+    }
+
+    .order-items>button{
+        width: auto;
+        height: 2rem;
+    }
+}   

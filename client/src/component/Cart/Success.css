@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.order-success{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-success>button {
+    margin-bottom: 2rem;
+    border: none;
+    background-color: #8A33FD;
+    border-radius: 5px;
+    width: 9rem;
+    height: 2.5rem;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.order-success>button:hover {
+    cursor: pointer;
+    background-color: #6725bd;
+}
+
+@media (max-width: 840px) {
+    .order-success>img{
+        width: 100vw;
+    }
+
+    .order-success{
+        height: 65vh;
+    }
+}
